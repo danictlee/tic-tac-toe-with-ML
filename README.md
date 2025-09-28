@@ -1,132 +1,132 @@
-# 🎯 Projeto de IA - Classificador de Estados do Jogo da Velha
+# 🎯 AI Project - Tic-Tac-Toe Game State Classifier
 
-Este projeto implementa um sistema completo de Machine Learning para classificar estados do jogo da velha e uma aplicação interativa para testar o modelo.
+This project implements a complete Machine Learning system to classify tic-tac-toe game states and an interactive application to test the model.
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
-📦 Projeto IA
-├── 01_data_engineering.ipynb      # Pipeline de engenharia de dados
-├── 02_training_and_evaluation.ipynb  # Treinamento e avaliação dos modelos
-├── 03_game_app.py                 # Aplicação do jogo interativo
-├── dataset-IA.csv                 # Dataset original
-├── train_dataset.csv              # Dados de treino (gerado automaticamente)
-├── validation_dataset.csv         # Dados de validação (gerado automaticamente)
-├── test_dataset.csv               # Dados de teste (gerado automaticamente)
-├── best_classifier.joblib         # Melhor modelo treinado (gerado automaticamente)
-├── onehot_encoder.joblib           # Encoder das features (gerado automaticamente)
-├── label_encoder.joblib            # Encoder das classes (gerado automaticamente)
-└── comparacao_modelos.png          # Gráfico de comparação (gerado automaticamente)
+📦 AI Project
+├── 01_data_engineering.ipynb      # Data engineering pipeline
+├── 02_training_and_evaluation.ipynb  # Model training and evaluation
+├── 03_game_app.py                 # Interactive game application
+├── dataset-IA.csv                 # Original dataset
+├── train_dataset.csv              # Training data (auto-generated)
+├── validation_dataset.csv         # Validation data (auto-generated)
+├── test_dataset.csv               # Test data (auto-generated)
+├── best_classifier.joblib         # Best trained model (auto-generated)
+├── onehot_encoder.joblib           # Feature encoder (auto-generated)
+├── label_encoder.joblib            # Class encoder (auto-generated)
+└── model_comparison.png            # Comparison chart (auto-generated)
 ```
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-### Pré-requisitos
+### Prerequisites
 - Python 3.8+
-- Jupyter Notebook ou VS Code com extensão Python
-- Bibliotecas: pandas, numpy, scikit-learn, matplotlib, seaborn, joblib
+- Jupyter Notebook or VS Code with Python extension
+- Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, joblib
 
-### Passo 1: Data Engineering
-Execute o notebook `01_data_engineering.ipynb` sequencialmente:
+### Step 1: Data Engineering
+Run the notebook `01_data_engineering.ipynb` sequentially:
 
-1. **Setup e Importações**: Instala dependências e importa bibliotecas
-2. **Carregamento dos Dados**: Carrega e analisa o dataset
-3. **Análise Exploratória**: Verifica balanceamento das classes
-4. **Pré-processamento**: Codifica features e divide os dados
+1. **Setup and Imports**: Installs dependencies and imports libraries
+2. **Data Loading**: Loads and analyzes the dataset
+3. **Exploratory Analysis**: Checks class balance
+4. **Preprocessing**: Encodes features and splits data
 
-**Arquivos gerados:**
+**Generated files:**
 - `train_dataset.csv`
 - `validation_dataset.csv`  
 - `test_dataset.csv`
 - `onehot_encoder.joblib`
 - `label_encoder.joblib`
-- `distribuicao_classes_carregado.png`
+- `class_distribution_loaded.png`
 
-### Passo 2: Training and Evaluation
-Execute o notebook `02_training_and_evaluation.ipynb` sequencialmente:
+### Step 2: Training and Evaluation
+Run the notebook `02_training_and_evaluation.ipynb` sequentially:
 
-1. **Importações**: Carrega bibliotecas de ML
-2. **Carregamento dos Dados**: Carrega datasets processados
-3. **Otimização de Hiperparâmetros**: Treina 5 modelos diferentes
+1. **Imports**: Loads ML libraries
+2. **Data Loading**: Loads processed datasets
+3. **Hyperparameter Optimization**: Trains 5 different models
    - k-Nearest Neighbors (k-NN)
    - Decision Tree
    - Multi-layer Perceptron (MLP)
    - Random Forest
    - Support Vector Machine (SVM)
-4. **Avaliação**: Compara modelos no conjunto de teste
-5. **Visualização**: Gera gráfico comparativo
-6. **Seleção**: Salva o melhor modelo
+4. **Evaluation**: Compares models on test set
+5. **Visualization**: Generates comparison chart
+6. **Selection**: Saves the best model
 
-**Arquivos gerados:**
+**Generated files:**
 - `best_classifier.joblib`
-- `comparacao_modelos.png`
+- `model_comparison.png`
 
-### Passo 3: Aplicação Interativa
-Execute o jogo no terminal:
+### Step 3: Interactive Application
+Run the game in terminal:
 
 ```bash
 python 03_game_app.py
 ```
 
-## 🎮 Como Jogar
+## 🎮 How to Play
 
-1. O jogo da velha será exibido com posições numeradas de 1-9
-2. Você joga como 'X' e o computador como 'O'
-3. Digite o número da posição onde quer jogar
-4. A IA analisará cada estado do jogo e mostrará:
-   - Estado real do jogo
-   - Predição da IA
-   - Se a predição está correta
-   - Acurácia em tempo real
+1. The tic-tac-toe board will be displayed with positions numbered 1-9
+2. You play as 'X' and the computer as 'O'
+3. Enter the position number where you want to play
+4. The AI will analyze each game state and show:
+   - Real game state
+   - AI prediction
+   - Whether the prediction is correct
+   - Real-time accuracy
 
-## 📊 Classes do Dataset
+## 📊 Dataset Classes
 
-- **Fim de Jogo**: Jogo terminado (vitória ou empate)
-- **Possibilidade de Fim**: Alguém pode ganhar na próxima jogada
-- **Tem Jogo**: Jogo ainda em andamento sem ameaças imediatas
+- **Game Over**: Game finished (victory or draw)
+- **Possibility of End**: Someone can win in the next move
+- **Has Game**: Game still in progress without immediate threats
 
-## 🧠 Modelos Implementados
+## 🧠 Implemented Models
 
-1. **k-NN**: Classificação baseada em vizinhos próximos
-2. **Decision Tree**: Árvore de decisão com critérios otimizados
-3. **MLP**: Rede neural multi-camadas
-4. **Random Forest**: Ensemble de árvores de decisão
-5. **SVM**: Máquina de vetores de suporte
+1. **k-NN**: Classification based on nearest neighbors
+2. **Decision Tree**: Decision tree with optimized criteria
+3. **MLP**: Multi-layer neural network
+4. **Random Forest**: Ensemble of decision trees
+5. **SVM**: Support vector machine
 
-## 📈 Métricas de Avaliação
+## 📈 Evaluation Metrics
 
-- **F1-Score Ponderado**: Métrica principal para seleção do melhor modelo
-- **Classification Report**: Precision, Recall e F1-Score por classe
-- **Acurácia em Tempo Real**: Durante o jogo interativo
+- **Weighted F1-Score**: Main metric for best model selection
+- **Classification Report**: Precision, Recall and F1-Score per class
+- **Real-time Accuracy**: During interactive gameplay
 
-## 🔧 Funcionalidades
+## 🔧 Features
 
-### Pipeline de Dados
-- ✅ Carregamento e validação automática do dataset
-- ✅ Análise exploratória com visualizações
-- ✅ Codificação de variáveis categóricas (One-Hot)
-- ✅ Divisão estratificada dos dados (80% treino, 10% validação, 10% teste)
+### Data Pipeline
+- ✅ Automatic dataset loading and validation
+- ✅ Exploratory analysis with visualizations
+- ✅ Categorical variable encoding (One-Hot)
+- ✅ Stratified data split (80% train, 10% validation, 10% test)
 
-### Treinamento de Modelos
-- ✅ Grid Search para otimização de hiperparâmetros
-- ✅ Validação cruzada 5-fold
-- ✅ Comparação automática de modelos
-- ✅ Salvamento do melhor modelo
+### Model Training
+- ✅ Grid Search for hyperparameter optimization
+- ✅ 5-fold cross-validation
+- ✅ Automatic model comparison
+- ✅ Best model saving
 
-### Aplicação Interativa
-- ✅ Interface de terminal intuitiva
-- ✅ Análise em tempo real dos estados do jogo
-- ✅ Cálculo de acurácia da IA durante o jogo
-- ✅ Detecção automática de fim de jogo
+### Interactive Application
+- ✅ Intuitive terminal interface
+- ✅ Real-time game state analysis
+- ✅ AI accuracy calculation during gameplay
+- ✅ Automatic game end detection
 
-## 🎯 Objetivo do Projeto
+## 🎯 Project Objective
 
-Este projeto demonstra um pipeline completo de Machine Learning:
-1. **Engenharia de Dados**: Preparação e análise dos dados
-2. **Modelagem**: Treinamento e comparação de múltiplos algoritmos
-3. **Aplicação Prática**: Sistema interativo para validação do modelo
+This project demonstrates a complete Machine Learning pipeline:
+1. **Data Engineering**: Data preparation and analysis
+2. **Modeling**: Training and comparison of multiple algorithms
+3. **Practical Application**: Interactive system for model validation
 
-O resultado é uma IA capaz de classificar estados do jogo da velha com alta precisão, útil para sistemas de jogos automatizados ou análise estratégica.
+The result is an AI capable of classifying tic-tac-toe game states with high precision, useful for automated game systems or strategic analysis.
 
 ---
-*Desenvolvido como projeto educacional de Machine Learning*
+*Developed as an educational Machine Learning project*
