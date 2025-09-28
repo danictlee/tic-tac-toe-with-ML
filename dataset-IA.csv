@@ -1,0 +1,751 @@
+1A;1B;1C;2A;2B;2C;3A;3B;3C;Classe
+0;0;2;0;0;0;0;2;0;Fim de Jogo
+0;2;2;1;1;1;0;2;2;Fim de Jogo
+0;2;2;1;1;1;2;0;2;Fim de Jogo
+0;2;2;1;1;1;2;2;0;Fim de Jogo
+0;2;2;1;0;0;1;1;1;Fim de Jogo
+0;2;2;0;1;0;1;1;1;Fim de Jogo
+0;2;2;0;0;1;1;1;1;Fim de Jogo
+0;2;2;0;2;2;1;1;1;Fim de Jogo
+0;2;2;2;0;2;1;1;1;Fim de Jogo
+0;2;2;2;2;0;1;1;1;Fim de Jogo
+2;1;1;0;1;0;1;0;2;Fim de Jogo
+2;1;1;0;1;0;1;2;0;Fim de Jogo
+2;1;1;0;1;0;0;1;2;Fim de Jogo
+2;1;1;0;1;0;2;1;0;Fim de Jogo
+2;1;1;2;1;0;1;0;0;Fim de Jogo
+2;1;1;2;1;0;0;1;0;Fim de Jogo
+2;1;1;2;0;1;0;0;1;Fim de Jogo
+2;1;0;1;1;1;0;0;2;Fim de Jogo
+2;1;0;1;1;1;0;2;0;Fim de Jogo
+2;1;0;1;1;1;2;0;0;Fim de Jogo
+2;1;0;1;1;0;0;1;2;Fim de Jogo
+2;1;0;1;1;2;0;1;0;Fim de Jogo
+2;1;0;0;1;1;0;1;2;Fim de Jogo
+2;1;0;0;1;1;2;1;0;Fim de Jogo
+2;1;0;0;1;0;1;1;2;Fim de Jogo
+2;1;0;0;1;0;2;1;1;Fim de Jogo
+2;1;0;0;1;2;1;1;0;Fim de Jogo
+2;1;0;0;1;2;0;1;1;Fim de Jogo
+2;1;0;0;1;2;2;1;2;Fim de Jogo
+2;1;0;0;0;2;1;1;1;Fim de Jogo
+2;1;0;0;2;0;1;1;1;Fim de Jogo
+2;1;0;2;1;1;0;1;0;Fim de Jogo
+2;1;0;2;1;0;0;1;1;Fim de Jogo
+2;1;0;2;1;0;2;1;2;Fim de Jogo
+2;1;0;2;1;2;0;1;2;Fim de Jogo
+2;1;0;2;1;2;2;1;0;Fim de Jogo
+2;1;0;2;0;0;1;1;1;Fim de Jogo
+2;1;2;1;1;0;0;1;0;Fim de Jogo
+2;1;2;0;1;1;0;1;0;Fim de Jogo
+2;1;2;0;1;0;1;1;0;Fim de Jogo
+2;1;2;0;1;0;0;1;1;Fim de Jogo
+2;1;2;0;1;0;2;1;2;Fim de Jogo
+2;1;2;0;1;2;0;1;2;Fim de Jogo
+2;1;2;0;1;2;2;1;0;Fim de Jogo
+2;1;2;2;1;0;0;1;2;Fim de Jogo
+2;1;2;2;1;0;2;1;0;Fim de Jogo
+2;1;2;2;1;2;0;1;0;Fim de Jogo
+2;0;1;1;1;1;0;0;2;Fim de Jogo
+2;0;1;1;1;1;0;2;0;Fim de Jogo
+2;0;1;1;1;1;2;0;0;Fim de Jogo
+2;0;1;1;1;0;1;0;2;Fim de Jogo
+2;0;1;1;1;0;1;2;0;Fim de Jogo
+2;0;1;1;1;2;1;0;0;Fim de Jogo
+2;0;1;1;0;1;0;2;1;Fim de Jogo
+2;0;1;1;2;1;0;0;1;Fim de Jogo
+2;0;1;0;1;1;1;0;2;Fim de Jogo
+2;0;1;0;1;1;1;2;0;Fim de Jogo
+2;0;1;0;1;1;0;2;1;Fim de Jogo
+2;0;1;0;1;1;2;0;1;Fim de Jogo
+2;0;1;0;1;0;1;1;2;Fim de Jogo
+2;0;1;0;1;0;1;2;1;Fim de Jogo
+2;0;1;0;1;2;1;1;0;Fim de Jogo
+2;0;1;0;1;2;1;0;1;Fim de Jogo
+2;0;1;0;1;2;1;2;2;Fim de Jogo
+2;0;0;1;0;2;1;1;1;Fim de Jogo
+2;0;0;1;2;0;1;1;1;Fim de Jogo
+2;0;0;0;1;2;1;1;1;Fim de Jogo
+2;0;0;0;2;1;1;1;1;Fim de Jogo
+2;0;0;2;1;0;1;1;1;Fim de Jogo
+2;0;0;2;0;1;1;1;1;Fim de Jogo
+2;0;0;2;2;2;1;1;1;Fim de Jogo
+2;0;2;1;1;1;1;0;0;Fim de Jogo
+2;0;2;1;1;1;0;1;0;Fim de Jogo
+2;0;2;1;1;1;0;0;1;Fim de Jogo
+2;0;2;1;1;1;0;2;2;Fim de Jogo
+2;0;2;1;1;1;2;0;2;Fim de Jogo
+2;0;2;1;1;1;2;2;0;Fim de Jogo
+2;0;2;1;0;0;1;1;1;Fim de Jogo
+2;0;2;0;1;0;1;1;1;Fim de Jogo
+2;0;2;0;0;1;1;1;1;Fim de Jogo
+2;0;2;0;2;2;1;1;1;Fim de Jogo
+2;0;2;2;0;2;1;1;1;Fim de Jogo
+2;0;2;2;2;0;1;1;1;Fim de Jogo
+2;2;1;1;1;0;1;0;0;Fim de Jogo
+2;2;1;1;0;1;0;0;1;Fim de Jogo
+2;2;1;0;1;1;1;0;0;Fim de Jogo
+2;2;1;0;1;1;0;0;1;Fim de Jogo
+2;2;1;0;1;0;1;1;0;Fim de Jogo
+2;2;1;0;1;0;1;0;1;Fim de Jogo
+2;2;1;0;1;0;1;2;2;Fim de Jogo
+2;2;1;0;1;2;1;0;2;Fim de Jogo
+2;2;1;0;1;2;1;2;0;Fim de Jogo
+2;2;1;0;0;1;1;0;1;Fim de Jogo
+2;2;1;0;0;1;0;1;1;Fim de Jogo
+2;2;1;0;0;1;2;2;1;Fim de Jogo
+2;2;1;0;2;1;0;2;1;Fim de Jogo
+2;2;1;0;2;1;2;0;1;Fim de Jogo
+2;2;1;2;1;0;1;0;2;Fim de Jogo
+2;2;1;2;1;0;1;2;0;Fim de Jogo
+2;2;1;2;1;2;1;0;0;Fim de Jogo
+2;2;1;2;0;1;0;2;1;Fim de Jogo
+2;2;1;2;0;1;2;0;1;Fim de Jogo
+2;2;1;2;2;1;0;0;1;Fim de Jogo
+2;2;0;1;1;1;1;0;0;Fim de Jogo
+2;2;0;1;1;1;0;1;0;Fim de Jogo
+2;2;0;1;1;1;0;0;1;Fim de Jogo
+2;2;0;1;1;1;0;2;2;Fim de Jogo
+2;2;0;1;1;1;2;0;2;Fim de Jogo
+2;2;0;1;1;1;2;2;0;Fim de Jogo
+2;2;0;1;0;0;1;1;1;Fim de Jogo
+2;2;0;0;1;0;1;1;1;Fim de Jogo
+2;2;0;0;0;1;1;1;1;Fim de Jogo
+2;2;0;0;2;2;1;1;1;Fim de Jogo
+2;2;0;2;0;2;1;1;1;Fim de Jogo
+2;2;0;2;2;0;1;1;1;Fim de Jogo
+2;2;2;1;1;1;0;0;2;Fim de Jogo
+2;2;2;1;1;1;0;2;0;Fim de Jogo
+2;2;2;1;1;1;2;0;0;Fim de Jogo
+2;2;2;0;0;2;1;1;1;Fim de Jogo
+2;2;2;0;2;0;1;1;1;Fim de Jogo
+2;2;2;2;0;0;1;1;1;Fim de Jogo
+1;1;0;1;1;0;0;2;0;Fim de Jogo
+1;1;0;1;1;0;2;0;0;Fim de Jogo
+1;1;0;1;1;2;0;0;0;Fim de Jogo
+1;1;0;1;0;1;0;0;2;Fim de Jogo
+1;1;0;1;0;1;0;2;0;Fim de Jogo
+1;1;0;1;0;0;0;1;2;Fim de Jogo
+1;1;0;1;0;0;0;2;1;Fim de Jogo
+1;1;0;1;0;0;2;1;0;Fim de Jogo
+1;1;0;1;0;2;0;1;0;Fim de Jogo
+1;1;0;1;0;2;0;0;1;Fim de Jogo
+1;1;0;1;0;2;0;2;2;Fim de Jogo
+1;1;0;1;2;1;0;0;0;Fim de Jogo
+1;1;0;1;2;0;0;1;0;Fim de Jogo
+1;1;0;1;2;0;2;2;0;Fim de Jogo
+1;1;0;0;1;0;1;2;0;Fim de Jogo
+1;1;0;0;0;1;0;1;2;Fim de Jogo
+1;1;0;0;0;1;0;2;1;Fim de Jogo
+1;1;0;0;0;0;1;1;2;Fim de Jogo
+1;1;0;0;0;0;1;2;1;Fim de Jogo
+1;1;0;0;0;0;2;1;1;Fim de Jogo
+1;1;0;0;0;2;0;1;1;Fim de Jogo
+1;1;0;0;2;0;1;1;0;Fim de Jogo
+1;1;0;2;1;1;0;0;0;Fim de Jogo
+1;1;0;2;1;0;1;0;0;Fim de Jogo
+1;1;0;2;1;0;2;2;0;Fim de Jogo
+1;1;0;2;0;1;0;1;0;Fim de Jogo
+1;1;0;2;0;1;0;0;1;Fim de Jogo
+1;1;0;2;0;1;0;2;2;Fim de Jogo
+1;1;0;2;0;0;1;1;0;Fim de Jogo
+1;1;0;2;0;0;0;1;1;Fim de Jogo
+1;1;0;2;0;2;0;1;2;Fim de Jogo
+1;1;0;2;0;2;0;2;1;Fim de Jogo
+1;1;0;2;2;0;1;2;0;Fim de Jogo
+1;1;0;2;2;0;2;1;0;Fim de Jogo
+1;1;2;1;1;0;0;0;0;Fim de Jogo
+1;1;2;1;0;1;0;0;0;Fim de Jogo
+1;1;2;1;2;2;0;0;0;Fim de Jogo
+1;1;2;0;1;1;0;0;0;Fim de Jogo
+1;1;2;0;0;0;1;1;0;Fim de Jogo
+1;1;2;0;0;0;1;0;1;Fim de Jogo
+1;1;2;0;0;0;1;2;2;Fim de Jogo
+1;1;2;0;0;0;0;1;1;Fim de Jogo
+1;1;2;0;0;0;2;1;2;Fim de Jogo
+1;1;2;0;0;0;2;2;1;Fim de Jogo
+1;1;2;2;1;2;0;0;0;Fim de Jogo
+1;1;2;2;2;1;0;0;0;Fim de Jogo
+1;0;1;1;1;2;0;0;0;Fim de Jogo
+1;0;1;1;0;1;0;0;2;Fim de Jogo
+1;0;1;1;0;1;2;0;0;Fim de Jogo
+1;0;1;1;0;0;2;0;1;Fim de Jogo
+1;0;1;1;0;2;0;0;1;Fim de Jogo
+1;0;1;1;0;2;2;0;2;Fim de Jogo
+1;0;1;1;2;1;0;0;0;Fim de Jogo
+1;0;1;0;0;1;1;0;2;Fim de Jogo
+1;0;1;0;0;0;1;1;2;Fim de Jogo
+1;0;1;0;0;0;1;2;1;Fim de Jogo
+1;0;1;0;0;0;2;1;1;Fim de Jogo
+1;0;1;0;0;2;1;0;1;Fim de Jogo
+1;0;1;2;1;1;0;0;0;Fim de Jogo
+1;0;1;2;0;1;1;0;0;Fim de Jogo
+1;0;1;2;0;1;2;0;2;Fim de Jogo
+1;0;1;2;0;0;1;0;1;Fim de Jogo
+1;0;1;2;0;2;1;0;2;Fim de Jogo
+1;0;1;2;0;2;2;0;1;Fim de Jogo
+1;0;0;1;1;0;2;1;0;Fim de Jogo
+1;0;0;1;0;1;0;1;2;Fim de Jogo
+1;0;0;1;0;1;0;2;1;Fim de Jogo
+1;0;0;1;0;1;2;0;1;Fim de Jogo
+1;0;0;1;0;2;0;1;1;Fim de Jogo
+1;0;0;2;1;0;1;1;0;Fim de Jogo
+1;0;0;2;0;1;1;0;1;Fim de Jogo
+1;0;0;2;0;1;0;1;1;Fim de Jogo
+1;0;2;1;0;1;0;0;1;Fim de Jogo
+1;0;2;1;0;1;2;0;2;Fim de Jogo
+1;0;2;1;0;2;2;0;1;Fim de Jogo
+1;0;2;0;0;1;1;0;1;Fim de Jogo
+1;0;2;2;0;1;1;0;2;Fim de Jogo
+1;0;2;2;0;1;2;0;1;Fim de Jogo
+1;0;2;2;0;2;1;0;1;Fim de Jogo
+1;2;1;1;1;0;0;0;0;Fim de Jogo
+1;2;1;1;0;1;0;0;0;Fim de Jogo
+1;2;1;1;2;2;0;0;0;Fim de Jogo
+1;2;1;0;1;1;0;0;0;Fim de Jogo
+1;2;1;0;0;0;1;1;0;Fim de Jogo
+1;2;1;0;0;0;1;0;1;Fim de Jogo
+1;2;1;0;0;0;1;2;2;Fim de Jogo
+1;2;1;0;0;0;0;1;1;Fim de Jogo
+1;2;1;0;0;0;2;1;2;Fim de Jogo
+1;2;1;0;0;0;2;2;1;Fim de Jogo
+1;2;1;2;1;2;0;0;0;Fim de Jogo
+1;2;1;2;2;1;0;0;0;Fim de Jogo
+1;2;0;1;1;0;0;1;0;Fim de Jogo
+1;2;0;1;1;0;2;2;0;Fim de Jogo
+1;2;0;1;0;1;0;1;0;Fim de Jogo
+1;2;0;1;0;1;0;0;1;Fim de Jogo
+1;2;0;1;0;1;0;2;2;Fim de Jogo
+1;2;0;1;0;0;0;1;1;Fim de Jogo
+1;2;0;1;0;2;0;1;2;Fim de Jogo
+1;2;0;1;0;2;0;2;1;Fim de Jogo
+1;2;0;1;2;0;2;1;0;Fim de Jogo
+1;2;0;0;1;0;1;1;0;Fim de Jogo
+1;2;0;0;0;1;0;1;1;Fim de Jogo
+1;2;0;2;1;0;1;2;0;Fim de Jogo
+1;2;0;2;1;0;2;1;0;Fim de Jogo
+1;2;0;2;0;1;0;1;2;Fim de Jogo
+1;2;0;2;0;1;0;2;1;Fim de Jogo
+1;2;0;2;0;2;0;1;1;Fim de Jogo
+1;2;0;2;2;0;1;1;0;Fim de Jogo
+1;2;2;1;1;2;0;0;0;Fim de Jogo
+1;2;2;1;2;1;0;0;0;Fim de Jogo
+1;2;2;0;0;0;1;1;2;Fim de Jogo
+1;2;2;0;0;0;1;2;1;Fim de Jogo
+1;2;2;0;0;0;2;1;1;Fim de Jogo
+1;1;0;0;1;1;1;0;0;Fim de Jogo
+1;1;0;0;0;1;1;1;0;Fim de Jogo
+1;1;0;0;0;1;1;0;1;Fim de Jogo
+1;0;1;1;1;0;0;1;0;Fim de Jogo
+1;0;1;1;0;1;0;1;0;Fim de Jogo
+1;0;1;1;0;0;0;1;1;Fim de Jogo
+1;0;1;0;1;1;0;1;0;Fim de Jogo
+1;0;1;0;0;1;1;1;0;Fim de Jogo
+1;0;0;0;1;1;1;1;0;Fim de Jogo
+0;1;1;1;1;0;0;0;1;Fim de Jogo
+0;1;1;1;0;0;1;0;1;Fim de Jogo
+0;1;1;1;0;0;0;1;1;Fim de Jogo
+0;1;0;1;1;0;1;0;1;Fim de Jogo
+0;1;0;1;0;1;1;0;1;Fim de Jogo
+0;1;0;0;1;1;1;0;1;Fim de Jogo
+0;0;1;1;1;0;0;1;1;Fim de Jogo
+2;1;2;0;0;2;0;1;0;Possibilidade de Fim
+2;0;0;0;0;2;2;2;0;Possibilidade de Fim
+1;0;0;2;1;1;0;1;0;Possibilidade de Fim
+2;2;2;0;2;0;0;2;2;Possibilidade de Fim
+2;2;1;0;1;0;0;0;2;Possibilidade de Fim
+2;2;1;0;0;2;2;0;2;Possibilidade de Fim
+0;0;1;2;2;0;0;0;1;Possibilidade de Fim
+2;1;2;2;0;2;0;2;0;Possibilidade de Fim
+0;2;0;2;1;0;2;0;1;Possibilidade de Fim
+0;2;0;2;0;2;2;1;1;Possibilidade de Fim
+0;2;2;1;0;0;0;2;2;Possibilidade de Fim
+0;2;2;0;1;2;2;1;1;Possibilidade de Fim
+2;2;0;0;0;2;1;1;2;Possibilidade de Fim
+2;0;0;1;1;2;0;2;1;Possibilidade de Fim
+0;1;2;1;2;0;1;0;2;Tem Jogo
+0;1;1;2;0;2;0;0;2;Possibilidade de Fim
+2;1;0;2;1;0;2;2;1;Possibilidade de Fim
+1;0;0;0;2;1;1;0;2;Possibilidade de Fim
+2;0;1;1;2;2;0;2;2;Tem Jogo
+2;1;0;2;2;2;1;0;0;Possibilidade de Fim
+2;2;2;2;2;0;2;0;2;Tem Jogo
+1;2;0;2;0;0;2;0;1;Possibilidade de Fim
+1;1;2;0;2;0;2;2;0;Possibilidade de Fim
+1;0;0;0;0;2;2;1;1;Possibilidade de Fim
+0;2;0;2;2;1;2;2;2;Possibilidade de Fim
+2;0;0;2;0;0;2;2;1;Possibilidade de Fim
+0;1;0;0;0;2;2;0;1;Possibilidade de Fim
+0;0;2;2;2;0;1;0;0;Possibilidade de Fim
+0;2;1;2;0;2;0;0;2;Possibilidade de Fim
+2;1;1;1;2;0;2;1;0;Possibilidade de Fim
+1;0;2;2;0;2;2;2;2;Possibilidade de Fim
+0;1;0;0;0;1;2;2;2;Possibilidade de Fim
+1;0;0;1;2;2;0;2;2;Possibilidade de Fim
+1;0;0;0;2;0;1;0;2;Possibilidade de Fim
+0;2;1;2;2;1;1;0;0;Possibilidade de Fim
+1;0;0;1;2;0;0;1;2;Possibilidade de Fim
+0;0;1;2;1;0;0;2;1;Possibilidade de Fim
+2;2;1;2;0;0;0;0;2;Possibilidade de Fim
+2;0;0;1;2;2;2;2;0;Possibilidade de Fim
+2;0;0;2;2;0;1;2;1;Possibilidade de Fim
+0;2;2;1;2;2;2;1;0;Possibilidade de Fim
+2;0;2;1;1;0;2;0;0;Possibilidade de Fim
+2;1;0;2;1;0;1;0;1;Possibilidade de Fim
+2;2;0;2;2;0;1;0;2;Possibilidade de Fim
+2;1;2;2;2;1;0;0;2;Possibilidade de Fim
+1;2;0;2;2;2;0;2;2;Possibilidade de Fim
+0;0;2;1;2;2;0;1;1;Possibilidade de Fim
+0;2;2;2;2;0;0;0;2;Possibilidade de Fim
+0;1;0;2;2;0;1;0;2;Possibilidade de Fim
+0;2;0;1;0;0;1;0;2;Possibilidade de Fim
+0;2;2;0;0;1;2;0;1;Possibilidade de Fim
+1;2;2;2;2;2;2;0;1;Possibilidade de Fim
+0;2;2;0;2;0;2;2;1;Possibilidade de Fim
+0;1;1;0;2;0;1;2;1;Possibilidade de Fim
+2;2;0;0;1;1;0;1;0;Possibilidade de Fim
+0;1;2;1;0;1;2;0;2;Possibilidade de Fim
+0;1;1;2;0;2;1;0;2;Possibilidade de Fim
+2;0;2;0;2;0;2;0;0;Possibilidade de Fim
+2;2;1;2;2;0;0;1;0;Tem Jogo
+2;1;0;0;0;1;2;2;0;Possibilidade de Fim
+0;1;2;0;2;1;1;2;1;Possibilidade de Fim
+1;2;2;2;2;2;1;2;0;Possibilidade de Fim
+1;0;1;0;1;1;2;1;2;Possibilidade de Fim
+0;0;2;2;2;2;0;2;2;Possibilidade de Fim
+2;0;2;0;1;0;0;0;2;Possibilidade de Fim
+1;2;0;0;2;2;0;0;2;Possibilidade de Fim
+2;2;2;1;2;0;1;1;0;Possibilidade de Fim
+1;2;0;0;2;1;2;2;0;Tem Jogo
+0;1;0;1;0;2;1;2;1;Possibilidade de Fim
+0;0;2;0;2;2;1;0;1;Possibilidade de Fim
+2;2;0;2;1;0;0;0;1;Possibilidade de Fim
+1;1;0;0;2;2;2;1;0;Possibilidade de Fim
+0;0;2;2;1;2;0;0;2;Possibilidade de Fim
+0;1;0;2;2;2;0;0;2;Possibilidade de Fim
+1;1;0;2;1;1;1;2;0;Possibilidade de Fim
+1;2;0;2;2;1;0;1;2;Possibilidade de Fim
+0;1;0;1;2;1;2;2;1;Possibilidade de Fim
+0;1;2;2;0;0;2;0;2;Possibilidade de Fim
+1;0;1;1;0;0;0;2;0;Possibilidade de Fim
+2;0;0;0;1;1;2;0;1;Possibilidade de Fim
+2;0;2;2;1;0;2;2;1;Possibilidade de Fim
+2;0;0;0;2;1;0;1;0;Possibilidade de Fim
+2;1;2;1;0;0;0;0;1;Possibilidade de Fim
+1;2;0;2;1;2;1;2;2;Possibilidade de Fim
+0;0;2;0;2;1;2;1;1;Possibilidade de Fim
+0;0;2;0;1;0;2;0;2;Possibilidade de Fim
+0;2;2;0;0;2;2;2;1;Possibilidade de Fim
+2;2;0;2;0;2;1;2;0;Possibilidade de Fim
+1;0;1;2;0;1;0;2;0;Possibilidade de Fim
+2;0;2;0;1;0;2;0;0;Possibilidade de Fim
+0;1;0;1;0;0;2;0;2;Possibilidade de Fim
+0;2;0;1;2;1;2;1;2;Possibilidade de Fim
+0;0;1;2;1;2;0;0;1;Possibilidade de Fim
+0;0;2;1;2;2;0;1;0;Possibilidade de Fim
+2;0;2;0;2;2;2;2;0;Tem Jogo
+1;2;2;0;2;1;2;0;1;Possibilidade de Fim
+0;2;0;0;2;0;2;1;2;Possibilidade de Fim
+0;2;1;2;0;0;2;2;1;Possibilidade de Fim
+2;2;0;2;0;2;2;0;0;Possibilidade de Fim
+1;2;0;0;0;2;1;1;2;Possibilidade de Fim
+2;1;2;0;0;1;0;1;1;Possibilidade de Fim
+0;2;2;0;1;2;1;0;0;Possibilidade de Fim
+2;1;1;0;0;1;2;2;2;Possibilidade de Fim
+2;1;0;1;0;1;2;0;2;Possibilidade de Fim
+2;2;2;0;2;0;0;0;1;Possibilidade de Fim
+1;0;2;2;2;0;0;2;1;Possibilidade de Fim
+0;2;0;2;1;2;2;0;2;Possibilidade de Fim
+2;1;2;2;0;0;2;2;1;Possibilidade de Fim
+2;0;0;0;1;2;0;2;0;Possibilidade de Fim
+1;1;0;0;2;1;2;1;1;Possibilidade de Fim
+0;0;1;1;1;0;0;2;1;Possibilidade de Fim
+1;0;2;1;0;0;0;1;1;Possibilidade de Fim
+0;2;1;1;1;0;2;0;0;Possibilidade de Fim
+0;2;2;2;1;2;2;2;1;Tem Jogo
+1;2;0;0;2;0;1;1;2;Possibilidade de Fim
+2;2;2;2;0;2;0;2;2;Possibilidade de Fim
+2;2;2;1;0;2;0;2;2;Possibilidade de Fim
+1;0;2;1;2;2;0;2;2;Tem Jogo
+1;2;1;2;2;1;0;1;2;Possibilidade de Fim
+2;2;0;2;1;1;2;0;0;Possibilidade de Fim
+2;1;0;0;0;2;1;2;0;Possibilidade de Fim
+0;0;2;0;2;2;2;0;0;Possibilidade de Fim
+1;1;2;1;2;1;2;2;0;Possibilidade de Fim
+1;0;1;2;2;2;2;1;0;Tem Jogo
+2;1;1;2;2;0;1;0;2;Possibilidade de Fim
+0;2;0;1;0;2;1;2;1;Possibilidade de Fim
+2;0;1;2;2;0;0;0;2;Possibilidade de Fim
+1;2;0;1;0;1;2;0;0;Possibilidade de Fim
+1;0;1;1;2;1;2;2;0;Possibilidade de Fim
+0;0;1;2;2;1;1;2;2;Possibilidade de Fim
+2;0;0;0;2;2;2;2;2;Possibilidade de Fim
+2;2;2;1;2;1;0;1;0;Possibilidade de Fim
+1;1;2;2;2;0;0;1;0;Possibilidade de Fim
+1;2;1;0;2;2;1;1;2;Possibilidade de Fim
+0;0;2;2;0;2;1;2;2;Possibilidade de Fim
+0;2;0;0;2;1;2;1;0;Possibilidade de Fim
+1;0;1;2;1;2;0;2;2;Possibilidade de Fim
+0;2;0;2;2;0;2;2;1;Possibilidade de Fim
+2;0;0;2;1;2;1;0;0;Possibilidade de Fim
+0;2;2;2;2;0;0;1;2;Possibilidade de Fim
+0;2;2;0;2;0;2;0;1;Possibilidade de Fim
+1;2;0;2;2;0;2;1;1;Possibilidade de Fim
+0;2;0;0;0;2;1;0;2;Possibilidade de Fim
+0;2;1;2;0;1;2;2;2;Possibilidade de Fim
+2;2;0;0;1;2;0;2;0;Possibilidade de Fim
+2;2;0;0;0;1;2;0;2;Possibilidade de Fim
+1;2;2;2;0;2;1;0;2;Possibilidade de Fim
+2;0;0;0;2;2;2;0;2;Possibilidade de Fim
+0;2;0;1;1;2;1;0;1;Possibilidade de Fim
+1;2;2;1;0;0;2;0;0;Possibilidade de Fim
+1;2;0;0;2;0;1;2;2;Possibilidade de Fim
+2;0;0;1;2;0;0;2;1;Possibilidade de Fim
+0;0;1;2;2;2;0;1;0;Possibilidade de Fim
+1;2;0;1;1;2;0;0;2;Possibilidade de Fim
+1;0;0;2;2;2;0;0;2;Possibilidade de Fim
+0;0;1;2;2;2;0;0;2;Possibilidade de Fim
+2;1;2;0;0;2;2;2;1;Possibilidade de Fim
+1;0;2;1;2;1;2;2;0;Possibilidade de Fim
+2;2;2;2;0;0;0;2;0;Possibilidade de Fim
+0;2;0;1;2;2;1;1;2;Possibilidade de Fim
+0;0;2;1;2;0;1;1;2;Possibilidade de Fim
+2;0;1;2;2;2;2;1;0;Tem Jogo
+2;0;1;2;2;1;1;2;0;Possibilidade de Fim
+2;2;0;1;2;0;2;1;1;Possibilidade de Fim
+0;2;1;0;2;1;1;0;0;Possibilidade de Fim
+2;2;2;0;1;0;2;2;0;Possibilidade de Fim
+0;2;2;2;0;0;2;0;2;Possibilidade de Fim
+0;0;1;2;1;0;2;0;1;Possibilidade de Fim
+2;1;2;0;2;1;2;2;2;Tem Jogo
+1;2;2;2;2;0;0;0;1;Possibilidade de Fim
+0;2;2;1;0;0;0;0;1;Possibilidade de Fim
+1;0;0;2;1;2;0;2;2;Possibilidade de Fim
+0;1;0;0;0;2;1;1;2;Possibilidade de Fim
+0;1;0;2;2;0;0;0;2;Possibilidade de Fim
+2;2;0;0;0;2;2;1;0;Possibilidade de Fim
+2;0;0;1;2;0;1;2;2;Possibilidade de Fim
+2;1;1;2;0;0;0;1;2;Possibilidade de Fim
+2;2;0;2;0;0;2;2;2;Possibilidade de Fim
+0;0;2;2;1;1;2;2;0;Possibilidade de Fim
+0;2;0;2;0;2;1;1;2;Possibilidade de Fim
+2;0;0;2;2;1;0;0;2;Possibilidade de Fim
+2;0;2;2;2;0;2;2;0;Possibilidade de Fim
+2;2;2;1;2;2;1;0;1;Possibilidade de Fim
+1;1;0;0;1;0;1;0;2;Possibilidade de Fim
+1;2;1;1;0;0;2;2;0;Possibilidade de Fim
+2;0;2;1;2;0;1;2;0;Possibilidade de Fim
+0;2;0;2;0;1;2;2;1;Possibilidade de Fim
+2;0;1;0;2;2;2;1;0;Tem Jogo
+0;1;0;0;1;2;2;2;0;Possibilidade de Fim
+0;2;1;1;1;2;0;2;2;Possibilidade de Fim
+2;0;2;1;1;2;0;0;2;Possibilidade de Fim
+2;0;0;2;2;0;0;0;2;Possibilidade de Fim
+0;0;2;2;2;2;2;2;1;Possibilidade de Fim
+1;2;2;1;1;2;2;2;0;Possibilidade de Fim
+2;1;0;2;1;1;2;2;1;Possibilidade de Fim
+1;0;2;0;0;1;2;1;0;Tem Jogo
+1;2;1;0;0;2;0;2;0;Possibilidade de Fim
+2;2;2;1;0;2;1;0;2;Possibilidade de Fim
+2;0;0;2;2;2;0;2;2;Possibilidade de Fim
+0;2;0;1;2;0;0;1;1;Possibilidade de Fim
+0;1;1;1;2;0;0;0;2;Possibilidade de Fim
+2;1;1;1;2;2;0;1;0;Possibilidade de Fim
+0;1;0;2;0;2;1;2;1;Possibilidade de Fim
+1;2;2;1;0;1;0;1;0;Possibilidade de Fim
+0;1;2;2;1;2;2;0;0;Possibilidade de Fim
+1;2;2;2;2;2;0;0;1;Possibilidade de Fim
+2;2;0;0;2;2;1;0;0;Possibilidade de Fim
+0;2;0;2;2;0;1;0;1;Possibilidade de Fim
+0;2;0;0;2;1;1;1;2;Possibilidade de Fim
+1;0;2;0;1;0;1;2;2;Possibilidade de Fim
+0;0;2;0;1;0;2;1;0;Possibilidade de Fim
+1;0;0;0;2;2;0;1;0;Possibilidade de Fim
+2;2;1;0;0;2;0;0;2;Possibilidade de Fim
+1;1;0;0;2;2;2;0;1;Possibilidade de Fim
+1;2;2;2;2;2;0;2;2;Tem Jogo
+2;0;1;1;1;2;2;0;1;Possibilidade de Fim
+1;0;1;2;0;1;2;2;0;Possibilidade de Fim
+2;0;0;0;1;1;2;2;2;Possibilidade de Fim
+2;0;0;1;2;2;0;0;1;Possibilidade de Fim
+1;2;2;0;0;1;2;0;0;Possibilidade de Fim
+2;2;2;0;2;2;0;2;0;Possibilidade de Fim
+2;0;1;0;2;1;0;2;2;Possibilidade de Fim
+1;0;2;0;0;1;0;2;2;Possibilidade de Fim
+1;0;1;2;1;1;2;0;2;Possibilidade de Fim
+1;2;2;0;2;2;0;2;0;Possibilidade de Fim
+0;2;2;2;2;0;0;1;1;Possibilidade de Fim
+0;1;1;2;2;0;0;2;0;Possibilidade de Fim
+1;1;0;2;0;2;2;2;0;Possibilidade de Fim
+0;2;1;2;0;2;2;0;1;Possibilidade de Fim
+1;2;0;0;0;1;2;2;0;Possibilidade de Fim
+2;0;1;0;0;1;1;2;0;Possibilidade de Fim
+1;2;1;2;0;0;2;2;2;Possibilidade de Fim
+2;0;0;2;2;1;2;0;0;Possibilidade de Fim
+2;1;1;0;2;2;0;2;2;Possibilidade de Fim
+2;2;2;2;1;0;1;1;2;Possibilidade de Fim
+1;0;0;0;0;1;2;1;1;Possibilidade de Fim
+0;2;0;0;0;1;2;0;2;Possibilidade de Fim
+1;2;2;2;0;1;2;0;0;Possibilidade de Fim
+1;1;0;1;0;2;2;1;1;Possibilidade de Fim
+2;2;0;0;0;1;2;1;1;Possibilidade de Fim
+2;2;0;0;2;1;1;2;0;Tem Jogo
+2;0;0;2;2;2;2;0;1;Possibilidade de Fim
+2;0;0;0;2;1;0;0;1;Possibilidade de Fim
+1;0;1;0;1;1;2;2;0;Possibilidade de Fim
+1;1;2;0;0;1;0;0;2;Possibilidade de Fim
+1;2;2;2;0;0;0;0;1;Possibilidade de Fim
+2;0;0;0;1;2;2;2;0;Possibilidade de Fim
+0;2;2;2;2;2;0;1;0;Possibilidade de Fim
+0;1;2;2;1;0;1;2;2;Possibilidade de Fim
+0;2;2;2;0;0;0;0;2;Possibilidade de Fim
+0;1;2;1;0;0;1;0;1;Possibilidade de Fim
+0;1;0;2;0;1;2;2;2;Possibilidade de Fim
+2;0;0;0;2;0;0;0;2;Possibilidade de Fim
+2;0;1;2;0;0;2;1;0;Possibilidade de Fim
+0;0;1;0;2;2;2;2;0;Possibilidade de Fim
+2;0;0;0;2;0;2;1;2;Possibilidade de Fim
+0;2;0;1;2;2;0;2;2;Possibilidade de Fim
+2;0;2;2;2;0;0;2;0;Possibilidade de Fim
+0;1;0;0;2;2;1;2;0;Possibilidade de Fim
+2;2;2;2;0;1;2;1;2;Tem Jogo
+0;2;0;1;2;1;1;1;2;Possibilidade de Fim
+2;2;0;1;0;2;2;0;2;Possibilidade de Fim
+0;2;0;0;2;2;2;0;0;Possibilidade de Fim
+0;1;0;0;2;2;1;0;0;Possibilidade de Fim
+0;2;0;2;0;0;2;2;2;Possibilidade de Fim
+2;2;1;2;0;1;1;0;2;Possibilidade de Fim
+2;1;0;2;1;2;2;0;2;Tem Jogo
+2;2;0;0;2;2;1;2;2;Tem Jogo
+0;1;2;2;2;0;1;2;2;Tem Jogo
+2;0;2;2;2;0;2;2;2;Tem Jogo
+2;2;0;0;1;1;2;2;2;Tem Jogo
+2;1;2;2;2;1;2;2;0;Tem Jogo
+1;2;2;0;2;2;1;2;2;Tem Jogo
+2;1;2;2;0;2;2;2;1;Tem Jogo
+0;2;2;1;2;0;1;2;2;Tem Jogo
+2;1;2;0;2;2;1;2;0;Tem Jogo
+2;0;2;0;0;1;2;1;2;Tem Jogo
+0;2;2;1;2;2;0;2;2;Tem Jogo
+1;0;1;2;2;1;2;2;0;Tem Jogo
+2;0;2;1;2;0;2;2;2;Tem Jogo
+1;2;0;0;2;2;1;0;2;Tem Jogo
+2;2;2;2;2;0;0;1;1;Tem Jogo
+2;1;0;0;1;1;2;0;2;Tem Jogo
+0;2;1;1;2;0;2;0;2;Tem Jogo
+2;2;0;0;2;2;2;1;2;Tem Jogo
+1;0;0;2;2;1;2;1;2;Tem Jogo
+2;2;2;0;1;2;2;0;2;Tem Jogo
+0;2;2;2;2;1;2;0;2;Tem Jogo
+2;0;2;1;2;2;0;2;2;Tem Jogo
+2;2;0;2;2;2;2;2;2;Tem Jogo
+0;1;2;0;2;1;1;2;2;Tem Jogo
+0;2;1;1;2;0;0;2;1;Tem Jogo
+0;2;2;1;2;2;0;0;1;Tem Jogo
+0;1;1;1;2;2;0;2;2;Tem Jogo
+0;2;2;1;2;0;0;1;1;Tem Jogo
+1;0;1;2;2;0;0;2;2;Tem Jogo
+2;2;2;1;2;2;2;0;2;Tem Jogo
+1;2;2;0;2;1;1;2;2;Tem Jogo
+2;2;2;1;0;1;2;2;2;Tem Jogo
+0;2;2;1;2;2;1;0;1;Tem Jogo
+0;2;2;1;2;2;2;0;2;Tem Jogo
+1;0;1;2;2;0;2;1;2;Tem Jogo
+0;1;0;2;2;1;1;0;1;Tem Jogo
+0;2;2;1;2;0;0;2;1;Tem Jogo
+0;1;0;2;0;2;1;0;1;Tem Jogo
+2;0;2;2;2;2;1;2;0;Tem Jogo
+0;2;2;1;2;2;2;1;2;Tem Jogo
+2;2;2;2;2;2;0;2;1;Tem Jogo
+2;2;1;2;2;2;0;1;0;Tem Jogo
+2;2;1;2;2;1;2;2;0;Tem Jogo
+1;0;0;0;2;2;2;2;2;Tem Jogo
+2;2;2;0;1;2;2;2;2;Tem Jogo
+1;2;0;0;2;1;1;2;0;Tem Jogo
+0;2;2;1;2;2;0;1;1;Tem Jogo
+2;2;1;2;2;2;0;1;2;Tem Jogo
+0;2;2;0;2;1;1;0;2;Tem Jogo
+2;0;2;0;1;0;2;0;2;Tem Jogo
+0;1;2;2;2;0;1;0;1;Tem Jogo
+2;2;2;1;2;0;2;0;2;Tem Jogo
+1;0;2;0;2;2;0;1;0;Tem Jogo
+2;0;1;2;1;0;0;2;2;Tem Jogo
+1;1;0;2;2;2;2;0;2;Tem Jogo
+2;0;1;1;2;2;2;2;0;Tem Jogo
+2;1;0;0;2;1;1;0;0;Tem Jogo
+2;2;1;1;2;0;0;2;2;Tem Jogo
+2;1;2;0;2;2;2;0;1;Tem Jogo
+0;2;2;2;1;2;2;0;2;Tem Jogo
+2;1;2;2;2;0;2;0;2;Tem Jogo
+2;2;1;0;2;2;2;2;0;Tem Jogo
+2;2;0;2;1;2;2;2;2;Tem Jogo
+2;2;2;2;2;2;1;1;0;Tem Jogo
+2;1;0;2;2;2;2;2;2;Tem Jogo
+1;0;2;0;2;1;2;2;0;Tem Jogo
+1;2;2;2;2;2;2;0;2;Tem Jogo
+2;2;0;0;1;2;2;0;2;Tem Jogo
+2;0;2;2;1;0;0;1;2;Tem Jogo
+2;0;2;0;2;2;2;2;2;Tem Jogo
+1;1;0;2;2;2;2;2;2;Tem Jogo
+2;2;0;0;2;2;2;0;2;Tem Jogo
+1;2;2;0;1;1;2;2;0;Tem Jogo
+2;0;2;2;1;2;0;1;0;Tem Jogo
+2;0;1;1;2;2;2;2;2;Tem Jogo
+2;0;2;0;1;2;2;2;0;Tem Jogo
+1;0;0;2;2;1;2;2;2;Tem Jogo
+2;1;0;0;2;2;2;2;2;Tem Jogo
+2;2;1;1;2;2;0;2;2;Tem Jogo
+2;1;2;0;1;2;2;0;2;Tem Jogo
+2;0;1;2;0;2;0;1;2;Tem Jogo
+0;2;1;1;2;2;0;1;2;Tem Jogo
+1;0;1;2;2;2;0;2;2;Tem Jogo
+2;0;2;2;2;0;2;2;1;Tem Jogo
+2;2;1;0;2;1;2;2;0;Tem Jogo
+2;2;0;2;2;0;2;0;1;Tem Jogo
+2;2;2;0;2;2;2;1;2;Tem Jogo
+0;1;2;1;2;0;2;2;2;Tem Jogo
+2;0;2;0;2;1;1;2;2;Tem Jogo
+0;1;0;2;2;2;1;0;1;Tem Jogo
+0;1;2;1;2;2;0;2;1;Tem Jogo
+2;1;2;1;0;2;2;2;2;Tem Jogo
+2;2;2;2;2;0;2;2;2;Tem Jogo
+0;1;0;2;1;2;2;0;2;Tem Jogo
+0;0;1;1;2;0;0;2;2;Tem Jogo
+2;1;2;2;0;2;2;1;2;Tem Jogo
+2;2;1;2;0;2;0;2;2;Tem Jogo
+0;1;2;0;2;1;1;0;2;Tem Jogo
+0;1;2;1;2;2;2;0;1;Tem Jogo
+0;2;2;2;2;2;2;0;2;Tem Jogo
+0;2;2;2;1;0;2;0;2;Tem Jogo
+2;2;0;2;2;0;1;0;1;Tem Jogo
+2;1;0;0;2;1;2;2;2;Tem Jogo
+0;1;0;2;2;1;2;2;2;Tem Jogo
+2;2;0;2;2;2;2;0;1;Tem Jogo
+2;2;2;0;2;2;1;2;0;Tem Jogo
+2;2;0;1;2;2;2;2;2;Tem Jogo
+0;2;2;2;1;0;2;0;1;Tem Jogo
+0;1;0;2;2;2;2;2;1;Tem Jogo
+2;1;0;0;2;2;2;0;2;Tem Jogo
+2;0;1;2;1;2;0;1;0;Tem Jogo
+2;0;1;2;2;0;0;2;1;Tem Jogo
+0;1;0;1;2;2;1;0;1;Tem Jogo
+2;2;0;1;2;0;2;0;1;Tem Jogo
+1;2;2;2;0;2;2;2;0;Tem Jogo
+2;2;0;2;2;1;2;0;1;Tem Jogo
+0;2;1;2;2;2;2;2;2;Tem Jogo
+2;2;2;2;2;1;1;0;0;Tem Jogo
+2;0;2;2;2;0;0;2;1;Tem Jogo
+0;1;0;2;2;1;2;0;1;Tem Jogo
+1;2;2;2;2;2;2;2;2;Tem Jogo
+2;1;2;0;0;1;2;2;2;Tem Jogo
+1;2;2;0;2;2;2;0;2;Tem Jogo
+2;0;1;2;2;0;0;2;2;Tem Jogo
+2;1;0;2;2;0;2;0;1;Tem Jogo
+1;2;0;2;2;2;2;1;2;Tem Jogo
+1;2;2;2;2;1;0;1;2;Tem Jogo
+0;1;1;1;2;0;2;0;1;Tem Jogo
+2;2;2;1;2;0;2;0;1;Tem Jogo
+1;0;0;2;2;1;2;2;0;Tem Jogo
+2;2;0;0;2;2;1;0;1;Tem Jogo
+2;2;1;2;1;2;0;2;2;Tem Jogo
+2;1;0;2;2;1;2;2;2;Tem Jogo
+2;2;0;0;2;1;2;1;0;Tem Jogo
+2;0;2;2;2;2;2;2;2;Tem Jogo
+2;2;1;0;2;2;2;1;0;Tem Jogo
+0;2;2;1;2;2;0;1;2;Tem Jogo
+2;2;2;0;2;2;2;0;2;Tem Jogo
+2;0;2;2;2;1;2;1;2;Tem Jogo
+2;0;2;1;2;2;2;1;0;Tem Jogo
+0;1;1;2;2;0;2;2;1;Tem Jogo
+2;0;2;2;2;0;0;1;2;Tem Jogo
+2;2;2;1;2;0;0;2;2;Tem Jogo
+2;2;2;0;0;1;2;2;2;Tem Jogo
+1;0;2;0;0;1;2;1;2;Tem Jogo
+2;2;1;1;0;0;2;2;2;Tem Jogo
+0;2;2;0;2;2;1;0;2;Tem Jogo
+1;2;2;2;2;0;2;2;2;Tem Jogo
+2;2;2;1;2;2;2;1;2;Tem Jogo
+2;2;2;2;2;2;0;1;2;Tem Jogo
+2;2;2;2;2;1;1;2;0;Tem Jogo
+0;2;2;2;0;2;2;2;1;Tem Jogo
+2;1;2;2;2;2;2;0;2;Tem Jogo
+2;1;2;1;2;2;2;2;0;Tem Jogo
+1;0;2;1;2;2;0;1;2;Tem Jogo
+0;2;1;1;2;0;0;0;1;Tem Jogo
+2;2;1;1;0;2;0;1;2;Tem Jogo
+2;2;2;0;2;1;2;2;2;Tem Jogo
+2;1;2;0;1;0;2;0;2;Tem Jogo
+2;2;2;2;2;2;0;1;0;Tem Jogo
+1;2;0;0;2;1;1;0;2;Tem Jogo
+2;1;2;1;2;0;2;2;1;Tem Jogo
+2;2;0;0;1;1;1;2;0;Tem Jogo
+1;0;2;2;2;1;2;2;2;Tem Jogo
+0;1;2;1;2;0;1;2;2;Tem Jogo
+2;2;2;2;2;2;2;0;1;Tem Jogo
+2;2;2;0;2;2;1;0;0;Tem Jogo
+2;1;2;1;2;0;2;0;1;Tem Jogo
+2;1;2;2;2;0;2;2;2;Tem Jogo
+0;2;2;2;2;0;2;2;2;Tem Jogo
+2;2;2;2;2;0;0;2;2;Tem Jogo
+1;0;2;0;2;2;1;2;0;Tem Jogo
+1;2;2;0;2;2;1;2;0;Tem Jogo
+2;0;1;2;2;2;2;2;0;Tem Jogo
+0;2;2;1;2;0;0;0;1;Tem Jogo
+1;0;2;2;1;2;2;2;0;Tem Jogo
+2;1;2;2;2;2;2;2;0;Tem Jogo
+2;1;2;1;2;0;2;0;2;Tem Jogo
+0;2;1;1;2;0;2;1;2;Tem Jogo
+2;0;1;1;2;2;2;1;0;Tem Jogo
+2;1;2;0;2;2;2;2;0;Tem Jogo
+1;0;2;0;2;2;0;2;2;Tem Jogo
+1;0;2;2;2;2;2;2;2;Tem Jogo
+2;2;0;2;2;2;2;1;2;Tem Jogo
+0;2;2;1;2;0;2;2;1;Tem Jogo
+1;0;1;0;2;2;0;1;0;Tem Jogo
+2;2;2;1;0;2;2;2;1;Tem Jogo
+0;2;1;2;2;0;2;0;2;Tem Jogo
+2;2;2;2;2;0;1;0;2;Tem Jogo
+1;0;2;2;2;1;0;2;2;Tem Jogo
+2;2;0;2;2;2;1;0;2;Tem Jogo
+2;1;2;1;2;2;0;2;1;Tem Jogo
+1;0;1;0;2;1;2;1;0;Tem Jogo
+1;0;2;1;2;0;0;1;2;Tem Jogo
+1;2;2;2;2;2;2;1;0;Tem Jogo
+2;2;0;0;2;2;2;2;1;Tem Jogo
+2;2;1;2;1;0;0;2;2;Tem Jogo
+2;2;2;2;2;0;0;0;1;Tem Jogo
+2;0;1;1;2;0;0;2;2;Tem Jogo
+1;2;0;2;2;1;2;2;2;Tem Jogo
+2;2;2;2;2;1;2;2;0;Tem Jogo
+2;2;2;2;0;2;2;1;2;Tem Jogo
+2;0;2;2;2;0;0;2;2;Tem Jogo
+2;0;2;0;2;1;2;1;2;Tem Jogo
+2;0;1;0;2;2;2;2;2;Tem Jogo
+2;2;2;0;2;2;2;2;2;Tem Jogo
+2;0;2;1;2;0;0;2;2;Tem Jogo
+0;1;2;1;2;2;2;2;2;Tem Jogo
+0;1;0;0;1;1;1;0;2;Tem Jogo
+2;2;1;2;2;0;0;1;2;Tem Jogo
+2;0;1;2;2;0;0;1;0;Tem Jogo
+2;0;2;1;2;2;2;2;0;Tem Jogo
+1;0;2;2;2;2;0;1;2;Tem Jogo
+2;0;1;1;0;0;2;1;2;Tem Jogo
+2;2;2;1;2;0;2;1;2;Tem Jogo
+2;1;2;1;0;2;2;0;2;Tem Jogo
+2;2;2;1;2;2;0;2;1;Tem Jogo
+2;0;2;2;1;0;2;0;2;Tem Jogo
+1;0;1;1;2;0;0;1;2;Tem Jogo
+2;1;0;1;2;0;2;0;1;Tem Jogo
+1;0;1;2;2;0;2;1;0;Tem Jogo
+0;1;0;2;1;0;2;0;1;Tem Jogo
+0;2;2;2;2;0;1;0;2;Tem Jogo
+2;1;2;2;2;2;0;2;1;Tem Jogo
+2;0;2;0;2;1;2;1;0;Tem Jogo
+1;2;2;0;2;1;1;2;0;Tem Jogo
+2;2;2;0;2;2;2;2;1;Tem Jogo
+0;1;2;2;2;0;2;0;2;Tem Jogo
+2;0;2;0;2;1;2;2;2;Tem Jogo
+1;0;1;2;2;2;2;2;0;Tem Jogo
+0;1;2;0;2;2;1;0;2;Tem Jogo
+0;1;1;2;2;0;2;0;2;Tem Jogo
+1;0;0;0;2;1;2;2;0;Tem Jogo
