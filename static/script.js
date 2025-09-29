@@ -256,8 +256,8 @@ class TicTacToeGame {
         
         if (this.gameState.prediction) {
             const prediction = this.gameState.prediction;
-            
-            // Basic information
+
+            // Exibe o estado do tabuleiro e o ground truth
             let html = `
                 <div class="prediction-item">
                     <i class="fas fa-gamepad"></i>
@@ -268,30 +268,19 @@ class TicTacToeGame {
                     <span><strong>Ground Truth:</strong> ${prediction.ground_truth}</span>
                 </div>
             `;
-            
-            // Best model prediction (primary)
-            html += `
-                <div class="prediction-item primary-prediction">
-                    <i class="fas fa-star"></i>
-                    <span><strong>Best Model (${prediction.best_model}):</strong> ${prediction.best_prediction}</span>
-                    <span class="confidence-badge">${(prediction.confidence * 100).toFixed(1)}%</span>
-                </div>
-            `;
-            
-            // All models comparison
+
+            // Exibe as predições de todos os modelos
             if (prediction.all_predictions && Object.keys(prediction.all_predictions).length > 0) {
                 html += `<div class="models-comparison">
                     <h4>
-                        <i class="fas fa-chart-bar"></i> All Models Comparison:
+                        <i class="fas fa-chart-bar"></i> Predições de Todos os Modelos:
                     </h4>
                 `;
                 
                 for (const [modelName, modelPrediction] of Object.entries(prediction.all_predictions)) {
                     const isCorrect = modelPrediction === prediction.ground_truth;
-                    const isPrimary = modelName === prediction.best_model;
-                    
                     html += `
-                        <div class="model-prediction ${isPrimary ? 'primary-model' : ''} ${isCorrect ? 'correct-prediction' : ''}">
+                        <div class="model-prediction ${isCorrect ? 'correct-prediction' : 'incorrect-prediction'}">
                             <span class="model-name">${modelName}</span>
                             <span class="model-result">${modelPrediction}</span>
                             ${isCorrect ? '<i class="fas fa-check-circle correct-icon"></i>' : '<i class="fas fa-times-circle incorrect-icon"></i>'}
