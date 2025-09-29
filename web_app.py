@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+﻿from flask import Flask, render_template, request, jsonify
 import numpy as np
 import pandas as pd
 import joblib
@@ -9,14 +9,56 @@ app = Flask(__name__)
 
 # --- Load Model and Encoders ---
 try:
-    model = joblib.load('best_classifier.joblib')
+    # Load the best model (primary)
+    best_model = joblib.load('best_classifier.joblib')
     onehot_encoder = joblib.load('onehot_encoder.joblib')
     label_encoder = joblib.load('label_encoder.joblib')
-    MODEL_NAME = type(model).__name__
-    print(f"✅ Model loaded successfully: {MODEL_NAME}")
+    BEST_MODEL_NAME = type(best_model).__name__
+    
+    # Load other models for comparison
+    from sklearn.neighbors import KNeighborsClassifier
+    from sklearn.tree import DecisionTreeClassifier
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.neural_network import MLPClassifier
+    
+    # Load training data to retrain other models
+    print("Loading training data for other models...")
+    train_df = pd.read_csv('train_dataset.csv')
+    val_df = pd.read_csv('validation_dataset.csv')
+    full_train_df = pd.concat([train_df, val_df])
+    X_train = full_train_df.drop('target', axis=1)
+    y_train = full_train_df['target']
+    
+    # Create other models with optimized parameters
+    other_models = {
+        'k-NN': KNeighborsClassifier(n_neighbors=5, weights='distance'),
+        'Decision Tree': DecisionTreeClassifier(max_depth=10, min_samples_split=2, random_state=42),
+        'Random Forest': RandomForestClassifier(n_estimators=100, max_depth=None, random_state=42)
+    }
+    
+    # Train other models
+    print("Training models for comparison...")
+    for name, model in other_models.items():
+        model.fit(X_train, y_train)
+    
+    # Add the best model to the dictionary
+    if isinstance(best_model, MLPClassifier):
+        other_models['MLP'] = best_model
+    elif isinstance(best_model, KNeighborsClassifier):
+        other_models['k-NN'] = best_model
+    elif isinstance(best_model, DecisionTreeClassifier):
+        other_models['Decision Tree'] = best_model
+    elif isinstance(best_model, RandomForestClassifier):
+        other_models['Random Forest'] = best_model
+    
+    print(f"✅ Primary model loaded: {BEST_MODEL_NAME}")
+    print(f"✅ All models loaded: {list(other_models.keys())}")
+    
 except FileNotFoundError as e:
     print("❌ Error: Model files not found. Please run notebooks 01 and 02 first.")
     print(f"Missing file: {e}")
+except Exception as e:
+    print(f"❌ Error loading models: {e}")
 
 class TicTacToeAI:
     def __init__(self):
@@ -54,16 +96,16 @@ class TicTacToeAI:
         return False
     
     def make_ai_move(self):
-        """AI makes the best available move"""
+        """AI makes a random available move"""
         if self.game_over or self.current_player != 'O':
             return False
             
-        # Find best move (simple strategy for now)
+        # Find all available moves
         available_moves = [i for i, cell in enumerate(self.board) if cell == '']
         if available_moves:
-            # For demo purposes, pick first available move
-            # In a real implementation, this would use minimax or other AI strategy
-            position = available_moves[0]
+            # Choose random position instead of always first
+            import random
+            position = random.choice(available_moves)
             return self.make_move(position)
         return False
 
@@ -118,7 +160,7 @@ class TicTacToeAI:
         return 'Tem Jogo'
     
     def get_ai_prediction(self):
-        """Get AI prediction for current board state"""
+        """Get AI prediction with all models"""
         try:
             # Convert board to format expected by ML model
             mapping = {'X': 1, 'O': 0, '': 2}
@@ -127,27 +169,42 @@ class TicTacToeAI:
             board_df = pd.DataFrame([flat_board_numeric], columns=columns)
             board_onehot = onehot_encoder.transform(board_df)
             
-            prediction_encoded = model.predict(board_onehot)
-            prediction_proba = model.predict_proba(board_onehot)
-            prediction_label = label_encoder.inverse_transform(prediction_encoded)[0]
-            confidence = np.max(prediction_proba)
+            # Get predictions from all models
+            all_predictions = {}
+            for model_name, model in other_models.items():
+                prediction_encoded = model.predict(board_onehot)
+                prediction_label = label_encoder.inverse_transform(prediction_encoded)[0]
+                all_predictions[model_name] = prediction_label
+            
+            # Get best model prediction and confidence
+            best_prediction_encoded = best_model.predict(board_onehot)
+            best_prediction_proba = best_model.predict_proba(board_onehot)
+            best_prediction = label_encoder.inverse_transform(best_prediction_encoded)[0]
+            confidence = float(np.max(best_prediction_proba))
+            
+            # Get ground truth
+            ground_truth = self.get_board_state_ground_truth()
             
             # Format board state for display
             board_state_str = ','.join([cell if cell != '' else '_' for cell in self.board])
             
             return {
-                'prediction': prediction_label,
-                'confidence': float(confidence),
+                'best_prediction': best_prediction,
+                'all_predictions': all_predictions,
+                'ground_truth': ground_truth,
+                'confidence': confidence,
                 'gameState': board_state_str,
-                'model': MODEL_NAME
+                'best_model': BEST_MODEL_NAME
             }
         except Exception as e:
             print(f"Error in AI prediction: {e}")
             return {
-                'prediction': 'Error',
+                'best_prediction': 'Error',
+                'all_predictions': {},
+                'ground_truth': 'Error',
                 'confidence': 0.0,
                 'gameState': 'Unknown',
-                'model': MODEL_NAME
+                'best_model': BEST_MODEL_NAME
             }
 
 # Global game instance
@@ -166,30 +223,20 @@ def get_game_state():
         'currentPlayer': game.current_player,
         'gameOver': game.game_over,
         'winner': game.winner,
+        'totalMoves': game.total_moves,
+        'correctPredictions': game.correct_predictions,
+        'accuracy': (game.correct_predictions / max(game.total_moves, 1)) * 100,
         'prediction': game.last_prediction
-    })
-
-@app.route('/reset', methods=['POST'])
-def reset_game():
-    """Reset the game"""
-    global game
-    game.reset_game()
-    return jsonify({
-        'board': game.board,
-        'currentPlayer': game.current_player,
-        'gameOver': game.game_over,
-        'winner': game.winner,
-        'prediction': None
     })
 
 @app.route('/move', methods=['POST'])
 def make_move():
-    """Make a move"""
+    """Make a move on the board"""
     data = request.json
     position = data.get('position')
     
-    if position is None:
-        return jsonify({'error': 'Position is required'}), 400
+    if position is None or not (0 <= position <= 8):
+        return jsonify({'error': 'Invalid position'}), 400
     
     success = game.make_move(position)
     
@@ -201,7 +248,25 @@ def make_move():
         'currentPlayer': game.current_player,
         'gameOver': game.game_over,
         'winner': game.winner,
+        'totalMoves': game.total_moves,
+        'correctPredictions': game.correct_predictions,
+        'accuracy': (game.correct_predictions / max(game.total_moves, 1)) * 100,
         'prediction': game.last_prediction
+    })
+
+@app.route('/reset', methods=['POST'])
+def reset_game():
+    """Reset the game"""
+    game.reset_game()
+    return jsonify({
+        'board': game.board,
+        'currentPlayer': game.current_player,
+        'gameOver': game.game_over,
+        'winner': game.winner,
+        'totalMoves': game.total_moves,
+        'correctPredictions': game.correct_predictions,
+        'accuracy': 0,
+        'prediction': None
     })
 
 @app.route('/ai_move', methods=['POST'])
@@ -222,6 +287,7 @@ def ai_move():
 
 if __name__ == '__main__':
     print("🚀 Starting Tic-Tac-Toe AI Web Application...")
-    print(f"📊 Using model: {MODEL_NAME}")
-    print("🌐 Open your browser to: http://localhost:5000")
+    print(f"📊 Using primary model: {BEST_MODEL_NAME}")
+    print(f"🔍 Comparison models: {list(other_models.keys())}")
+    print("🌐 Open your browser and go to: http://localhost:5000")
     app.run(debug=True, host='0.0.0.0', port=5000)
