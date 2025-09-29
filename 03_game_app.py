@@ -32,7 +32,8 @@ def print_board(board):
 
 def get_board_state_ground_truth(board):
     """Determina o estado real do jogo baseado nas regras"""
-    board_flat = [cell if cell != ' ' else None for row in board for cell in row]
+    board_flat = [cell for row in board for cell in row if cell != ' ']
+    board_positions = [cell if cell != ' ' else None for row in board for cell in row]
     win_conditions = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Linhas
         [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Colunas
@@ -42,17 +43,17 @@ def get_board_state_ground_truth(board):
     # Verifica se alguém ganhou
     for player in ['x', 'o']:
         for condition in win_conditions:
-            if all(board_flat[i] == player for i in condition):
+            if all(board_positions[i] == player for i in condition):
                 return 'Fim de Jogo'
     
     # Verifica empate
-    if None not in board_flat:
+    if None not in board_positions:
         return 'Fim de Jogo'
 
     # Verifica possibilidade de fim (alguém pode ganhar na próxima jogada)
     for player in ['x', 'o']:
         for condition in win_conditions:
-            line = [board_flat[i] for i in condition]
+            line = [board_positions[i] for i in condition]
             if line.count(player) == 2 and line.count(None) == 1:
                 return 'Possibilidade de Fim'
 
@@ -74,82 +75,106 @@ def get_ai_prediction(board):
     prediction_label = label_encoder.inverse_transform(prediction_encoded)[0]
     return prediction_label
 
-# --- Loop Principal do Jogo ---
+class TicTacToeAI:
+    """Classe que engloba toda a funcionalidade do jogo da velha com análise de IA."""
+    
+    def __init__(self):
+        self.board = [[' ' for _ in range(3)] for _ in range(3)]
+        self.current_player = 'x'
+        self.game_history = []
+    
+    def reset_game(self):
+        """Reinicia o jogo"""
+        self.board = [[' ' for _ in range(3)] for _ in range(3)]
+        self.current_player = 'x'
+        self.game_history = []
+    
+    def is_valid_move(self, row, col):
+        """Verifica se um movimento é válido"""
+        return 0 <= row < 3 and 0 <= col < 3 and self.board[row][col] == ' '
+    
+    def make_move(self, row, col):
+        """Executa um movimento"""
+        if self.is_valid_move(row, col):
+            self.board[row][col] = self.current_player
+            return True
+        return False
+    
+    def switch_player(self):
+        """Troca o jogador atual"""
+        self.current_player = 'o' if self.current_player == 'x' else 'x'
+    
+    def get_board_state(self):
+        """Retorna o estado do tabuleiro como lista plana"""
+        return [cell for row in self.board for cell in row]
+    
+    def get_ai_analysis(self):
+        """Obtém análise da IA para o estado atual"""
+        prediction = get_ai_prediction(self.board)
+        ground_truth = get_board_state_ground_truth(self.board)
+        
+        analysis = {
+            'ai_prediction': prediction,
+            'ground_truth': ground_truth,
+            'model_name': MODEL_NAME,
+            'board_state': self.get_board_state()
+        }
+        
+        return analysis
+
 def game_loop():
     """Loop principal do jogo"""
-    board = [[' ' for _ in range(3)] for _ in range(3)]
-    current_player = 'x'
-    total_moves = 0
-    correct_predictions = 0
-
+    game = TicTacToeAI()
+    print(f"\n🎯 Jogo da Velha com Análise de IA")
+    print(f"📊 Modelo utilizado: {MODEL_NAME}")
+    print("\n📝 Como jogar:")
+    print("- Digite números de 1 a 9 para escolher uma posição")
+    print("- O tabuleiro mostra os números disponíveis")
+    print("- A IA analisa cada estado do jogo\n")
+    
     while True:
-        print_board(board)
+        print_board(game.board)
         
-        # Análise da IA (apenas após a primeira jogada)
-        if total_moves > 0:
-            real_state = get_board_state_ground_truth(board)
-            ai_prediction = get_ai_prediction(board)
-            is_correct = (real_state == ai_prediction)
-            if is_correct:
-                correct_predictions += 1
-            
-            print(f"\n--- Análise da IA ({MODEL_NAME}) ---")
-            print(f"Estado Real do Jogo (Verificador): {real_state}")
-            print(f"Predição da IA: {ai_prediction}")
-            print(f"A predição está {'CORRETA' if is_correct else 'INCORRETA'}")
-            accuracy = (correct_predictions / total_moves) * 100 if total_moves > 0 else 0
-            print(f"Acurácia em tempo real: {accuracy:.2f}% ({correct_predictions}/{total_moves})")
-            
-            # Verifica fim de jogo
-            if real_state == 'Fim de Jogo':
-                # Verifica quem ganhou
-                board_flat = [cell for row in board for cell in row]
-                winner = None
-                win_conditions = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
-                
-                for p in ['x', 'o']:
-                    for cond in win_conditions:
-                        if all(board_flat[i] == p for i in cond):
-                            winner = p
-                            break
-                    if winner:
-                        break
-                
-                print_board(board)  # Mostra o tabuleiro final
-                if winner:
-                    print(f"\nFIM DE JOGO! O jogador '{winner}' venceu!")
-                else:
-                    print("\nFIM DE JOGO! Deu empate!")
-                break
-
-        # Lógica de Turnos
-        if current_player == 'x':  # Jogador Humano
-            try:
-                move_str = input(f"\nTurno do Jogador '{current_player}'. Escolha uma posição (1-9): ")
-                if not move_str.isdigit(): 
-                    raise ValueError
-                move = int(move_str)
-                if move < 1 or move > 9: 
-                    raise ValueError
-                row, col = (move - 1) // 3, (move - 1) % 3
-                if board[row][col] == ' ':
-                    board[row][col] = current_player
-                    total_moves += 1
-                    current_player = 'o'
-                else:
-                    print("Posição já ocupada. Tente novamente.")
-            except (ValueError, IndexError):
-                print("Entrada inválida. Por favor, insira um número de 1 a 9.")
+        # Análise da IA
+        analysis = game.get_ai_analysis()
+        print(f"\n🤖 Análise da IA ({MODEL_NAME}):")
+        print(f"   Predição: {analysis['ai_prediction']}")
+        print(f"   Realidade: {analysis['ground_truth']}")
         
-        else:  # Jogador Computador (Aleatório)
-            print(f"\nTurno do Computador ('{current_player}')...")
-            empty_cells = [(r, c) for r in range(3) for c in range(3) if board[r][c] == ' ']
-            if empty_cells:
-                row, col = random.choice(empty_cells)
-                board[row][col] = current_player
-                total_moves += 1
-                current_player = 'x'
-                input("Pressione Enter para continuar...")
+        # Verifica se o jogo acabou
+        if analysis['ground_truth'] == 'Fim de Jogo':
+            print("\n🎉 Jogo finalizado!")
+            break
+        
+        # Entrada do jogador
+        try:
+            position = int(input(f"\nJogador {game.current_player.upper()}, escolha sua posição (1-9): "))
+            if position < 1 or position > 9:
+                print("❌ Posição inválida! Digite um número entre 1 e 9.")
+                continue
+            
+            row = (position - 1) // 3
+            col = (position - 1) % 3
+            
+            if game.make_move(row, col):
+                game.switch_player()
+            else:
+                print("❌ Posição já ocupada! Escolha outra.")
+        except ValueError:
+            print("❌ Digite apenas números!")
+    
+    # Pergunta se quer jogar novamente
+    while True:
+        play_again = input("\n🎮 Jogar novamente? (s/n): ").lower().strip()
+        if play_again in ['s', 'sim', 'y', 'yes']:
+            game.reset_game()
+            game_loop()
+            break
+        elif play_again in ['n', 'não', 'nao', 'no']:
+            print("\n👋 Obrigado por jogar!")
+            break
+        else:
+            print("❓ Digite 's' para sim ou 'n' para não.")
 
 if __name__ == "__main__":
     print("=== Jogo da Velha com IA ===")

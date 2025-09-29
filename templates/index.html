@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Tic-Tac-Toe AI Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-brain"></i> Tic-Tac-Toe AI Classifier</h1>
+                <p>Interactive Machine Learning Game State Analysis</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Game Section -->
+            <div class="game-section">
+                <div class="game-header">
+                    <h2><i class="fas fa-gamepad"></i> Game Board</h2>
+                    <div class="game-info">
+                        <span class="current-player">Player: <span id="currentPlayer">X</span></span>
+                        <button id="resetBtn" class="btn btn-secondary">
+                            <i class="fas fa-redo"></i> Reset Game
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-board" id="gameBoard">
+                    <button class="cell" data-index="0"></button>
+                    <button class="cell" data-index="1"></button>
+                    <button class="cell" data-index="2"></button>
+                    <button class="cell" data-index="3"></button>
+                    <button class="cell" data-index="4"></button>
+                    <button class="cell" data-index="5"></button>
+                    <button class="cell" data-index="6"></button>
+                    <button class="cell" data-index="7"></button>
+                    <button class="cell" data-index="8"></button>
+                </div>
+
+                <div class="game-controls">
+                    <button id="aiMoveBtn" class="btn btn-primary">
+                        <i class="fas fa-robot"></i> AI Move (O)
+                    </button>
+                </div>
+
+                <div class="game-status" id="gameStatus">
+                    <p>Click a cell to make your move!</p>
+                </div>
+            </div>
+
+            <!-- AI Analysis Section -->
+            <div class="analysis-section">
+                <div class="analysis-header">
+                    <h2><i class="fas fa-chart-line"></i> AI Analysis</h2>
+                    <div class="model-info">
+                        <span class="model-badge" id="modelName">Loading...</span>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="gamesPlayed">0</span>
+                            <span class="stat-label">Games Played</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="totalPredictions">0</span>
+                            <span class="stat-label">Predictions</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="predictionAccuracy">0%</span>
+                            <span class="stat-label">Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prediction-display">
+                    <h3><i class="fas fa-magic"></i> Current Prediction</h3>
+                    <div id="currentPrediction">
+                        <p class="text-gray-500">Make a move to see AI prediction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prediction History -->
+        <div class="history-section">
+            <h2><i class="fas fa-history"></i> Prediction History</h2>
+            <div class="history-container">
+                <div class="history-table-wrapper">
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Game State</th>
+                                <th>Prediction</th>
+                                <th>Actual</th>
+                                <th>Result</th>
+                                <th>Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody">
+                            <tr>
+                                <td colspan="6" class="no-data">No prediction history available</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+                                <th>Accuracy</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody">
+                            <tr>
+                                <td colspan="5" class="no-data">No predictions yet. Start playing!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>
+                    <i class="fas fa-graduation-cap"></i>
+                    Educational Machine Learning Project - 
+                    <strong>Tic-Tac-Toe Game State Classification</strong>
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Scikit-learn</span>
+                    <span class="tech-badge">Flask</span>
+                    <span class="tech-badge">HTML/CSS/JS</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-cog fa-spin"></i>
+            <p>Processing AI prediction...</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

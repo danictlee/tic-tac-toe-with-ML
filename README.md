@@ -1,6 +1,29 @@
 # 🎯 Projeto de IA - Classificador de Estados do Jogo da Velha
 
-Este projeto implementa um sistema completo de Machine Learning para classificar estados do jogo da velha e uma aplicação interativa para testar o modelo.
+**Disciplina:** Inteligência Artificial  
+**Instituição:** PUCRS - Pontifícia Universidade Católica do Rio Grande do Sul  
+**Período:** 2025/02  
+
+---
+
+## 📚 Visão Geral
+
+Este projeto implementa um **sistema completo de classificação de estados do jogo da velha** utilizando técnicas de **Machine Learning**. O objetivo é classificar automaticamente o estado atual de uma partida em três categorias:
+
+1. **"Fim de Jogo"** - A partida já terminou (vitória ou empate)
+2. **"Possibilidade de Fim"** - Alguém pode ganhar na próxima jogada  
+3. **"Tem Jogo"** - O jogo continua sem ameaça iminente
+
+---
+
+## 🏗️ Arquitetura do Projeto
+
+### Pipeline de Desenvolvimento:
+```
+Dataset Raw → Data Engineering → Model Training → Model Evaluation → Deployment
+     ↓              ↓                 ↓               ↓               ↓
+dataset-IA.csv → 01_notebook → 02_notebook → best_model.joblib → Web App
+```
 
 ## 📁 Estrutura do Projeto
 
@@ -52,7 +75,6 @@ Execute o notebook `02_training_and_evaluation.ipynb` sequencialmente:
    - Decision Tree
    - Multi-layer Perceptron (MLP)
    - Random Forest
-   - Support Vector Machine (SVM)
 4. **Avaliação**: Compara modelos no conjunto de teste
 5. **Visualização**: Gera gráfico comparativo
 6. **Seleção**: Salva o melhor modelo
@@ -91,7 +113,6 @@ python 03_game_app.py
 2. **Decision Tree**: Árvore de decisão com critérios otimizados
 3. **MLP**: Rede neural multi-camadas
 4. **Random Forest**: Ensemble de árvores de decisão
-5. **SVM**: Máquina de vetores de suporte
 
 ## 📈 Métricas de Avaliação
 
@@ -106,6 +127,69 @@ python 03_game_app.py
 - ✅ Análise exploratória com visualizações
 - ✅ Codificação de variáveis categóricas (One-Hot)
 - ✅ Divisão estratificada dos dados (80% treino, 10% validação, 10% teste)
+
+### Machine Learning
+- ✅ Otimização de hiperparâmetros com GridSearchCV
+- ✅ Validação cruzada k-fold (k=5)
+- ✅ Comparação de 5 algoritmos diferentes
+- ✅ Seleção automática do melhor modelo
+- ✅ Avaliação com métricas robustas (F1-Score ponderado)
+
+### Aplicações Interativas
+- ✅ Jogo da velha no terminal com predições em tempo real
+- ✅ Interface web moderna e responsiva
+- ✅ Dashboard de análise da IA
+- ✅ Histórico de predições e estatísticas
+- ✅ API REST para integração
+
+---
+
+## 🎯 Resultados Esperados
+
+- **Acurácia:** >90% na classificação de estados
+- **F1-Score:** >0.90 ponderado entre todas as classes  
+- **Tempo de Resposta:** <1ms por predição
+- **Interface:** Responsiva e intuitiva para demonstrações
+
+---
+
+## 📋 Arquivos do Projeto
+
+```
+projeto/
+├── 00_project_overview.ipynb      # Visão geral e documentação
+├── 01_data_engineering.ipynb      # Pipeline de dados
+├── 02_training_and_evaluation.ipynb # Treinamento de modelos
+├── 03_game_app.py                 # Jogo terminal
+├── web_app.py                     # Aplicação web Flask
+├── dataset-IA.csv                 # Dataset original
+├── README.md                      # Esta documentação
+├── static/                        # Recursos frontend
+│   ├── styles.css                 # Estilos CSS modernos
+│   └── script.js                  # JavaScript interativo
+└── templates/
+    └── index.html                 # Template HTML responsivo
+```
+
+---
+
+## 🔬 Aspectos Técnicos
+
+- **Linguagem:** Python 3.8+
+- **Framework ML:** Scikit-learn  
+- **Framework Web:** Flask
+- **Frontend:** HTML5, CSS3, JavaScript ES6+
+- **Visualização:** Matplotlib, Seaborn
+- **Persistência:** Joblib para modelos, CSV para dados
+- **Responsividade:** Design mobile-first
+
+---
+
+## 👨‍💻 Autor
+
+**Desenvolvido para a disciplina de Inteligência Artificial**  
+PUCRS - Pontifícia Universidade Católica do Rio Grande do Sul  
+Semestre: 2025/02
 
 ### Treinamento de Modelos
 - ✅ Grid Search para otimização de hiperparâmetros
